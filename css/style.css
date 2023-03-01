@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap&#39");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    line-height: 1.5;
+    color: gray;
+}
+
+body,
+main,
+footer,
+figcaption,
+form,
+main > section,
+main > section > article,
+main ul,
+header > section {
+    display: flex;
+    flex-direction: column;
+}
+
+main,
+main > section,
+main > section > section,
+main > section > article{
+    justify-content: center;
+}
+
+header > section{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 80, 80, .6);
+}
+
+header{
+    background-image: url("/img/header-bgpic.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main article > h3{
+    color: gray;
+    text-transform: uppercase;
+}
+
+main > section:nth-child(odd){
+    background-color: ghostwhite;
+}
+
+ul, ol, dl{
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width:200px){
+    main > section{
+        width: 80%;
+        padding: 10vh 0 10vh 0;
+    }
+
+    .features > article,
+    .team > article,
+    .about > article,
+    .contact > article,
+    .faq > article,
+    .portfolio > article{
+        text-align: center;
+    }
+
+    /*FEATURES */
+    .features aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5vh;
+    }
+
+    .features{
+        row-gap: 5vh;
+    }
+
+    .features aside > p{
+        text-align: center;
+    }
+
+    .features i{
+        background-color: darkorange;
+        color: white;
+        border: 3px solid darkorange;
+        border-radius: 50%;
+        height: 15vh;
+        width: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+    }
+
+}
